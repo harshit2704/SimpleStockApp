@@ -20,6 +20,11 @@ class StockListViewController: UIViewController {
         updateData()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        viewModel.stopApiCall()
+    }
+    
     func setupTableView(){
         homeTableView.register(UINib(nibName: "StockListTableViewCell", bundle: nil), forCellReuseIdentifier: "StockListTableViewCell")
         homeTableView.dataSource = self
