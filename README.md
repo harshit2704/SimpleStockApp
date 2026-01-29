@@ -21,27 +21,29 @@ The project focuses on **clean architecture, scalability, and performance**, rat
 ---
 
 ## Project Structure
+```
 SimpleStockApp
 ├── Screens
-│ ├── StockList
-│ │ ├── StockListViewController.swift
-│ │ ├── StockListViewModel.swift
-│ │ └── StockListData.swift
-│ └── Details
-│ └── StockDetailViewController.swift
+│   ├── StockList
+│   │   ├── StockListViewController.swift
+│   │   ├── StockListViewModel.swift
+│   │   └── StockListData.swift
+│   └── Details
+│       └── StockDetailViewController.swift
 │
 ├── Services
-│ ├── NetworkManager.swift
-│ └── EndPoint.swift
+│   ├── NetworkManager.swift
+│   └── EndPoint.swift
 │
 ├── Views
-│ └── StockListTableViewCell.swift
+│   └── StockListTableViewCell.swift
 │
 ├── AppDelegate.swift
 ├── SceneDelegate.swift
 ├── Assets.xcassets
 ├── Main.storyboard
 └── Info.plist
+```
 
 
 ---
